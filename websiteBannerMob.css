@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.overallWrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    /* background: linear-gradient(0deg, #fff 50%, #06502e 50%); */
+
+}
+
+.headerContainer {
+    width: 100%;
+    height: 80px;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.logoContainer {
+    width: 50%;
+}
+
+.logoContainer p {
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logoContainer p span {
+    color :#06502e
+}
+
+.headerContainer .fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.headerContainer .fa-times {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.navLinksContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.9);
+    position: fixed;
+    right: -100%;
+    top: 80px;
+    transition: .5s;
+    z-index: 1;
+}
+
+.showNavLinksContainer {
+    right: 0%;
+}
+
+.navLinksContainer ul {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navLinksContainer ul li {
+    margin-top: 50px;
+    list-style: none;
+    
+}
+
+.navLinksContainer ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color:#555;
+    
+}
+
+.textWithImageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.imageBox {
+    width: 100%;
+
+}
+
+.imageBox img {
+    width: 100%;
+}
+
+.textButtonBox {
+    background-color:#1fa78f;
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    color: #fff;
+    
+}
+
+.textButtonBox h1 {
+    margin-bottom: 10px;
+}
+
+.textButtonBox h2 {
+    margin-bottom: 10px;
+    color:#b6fcdb
+}
+
+.textButtonBox p {
+    font-size: 14px;
+    line-height: 22px;
+    color:#b6fcdb
+}
+
+.textButtonBox button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: #06502e;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.socialMediaIcon {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialMediaIcon .fa-brands {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1fa78f;
+    border-radius: 50px;
+    padding: 15px;
+}
